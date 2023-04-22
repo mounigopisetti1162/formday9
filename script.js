@@ -1,15 +1,21 @@
 let button=document.getElementById("btn")
 
+function changeresult()
+{
+   
+  }
+  let data=""
 let add=()=>{
-    let first=document.getElementById("name").value
+    let first=document.querySelector(".name").value
     console.log(first)
 let  last=document.querySelector(".last").value
 let address=document.querySelector(".address").value
 let gender=document.querySelector(".gender").value
-let food=document.querySelector(".food").value
+var food=document.querySelector(".food").value;
+
 let body=document.querySelector(".output")
-    let data=""
-    data+=
+   
+    data=data+
     `<tr>
     <td>${first}</td>
     <td>${last}</td>
@@ -24,7 +30,7 @@ document.getElementById("name").value=""
     
 document.querySelector(".last").value=""
 document.querySelector(".address").value=""
-document.querySelector(".food").value=""
+document.getElementById(".food").innerHTML = food;
 
   
 }

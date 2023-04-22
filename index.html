@@ -10,43 +10,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <h1 class="form">The Form</h1>
        <div class="container">
-        <div class="col-xs-4 col-sm-6 col-md-4 alert alert-danger">
+        <div class="col-xs-4 col-sm-6 col-md-4 alert alert-danger con">
             <label for="">First name</label>
-            <input type="text" id="name"/>
+            <input type="text" class="name"  />
             <label for="">Last name</label>
             <input type="text" class="last">
             <label for="">Address</label>
             <input type="text" class="address">
             <label for="">Gender</label>
             <input type="text" class="gender">
-          <br><br>
+         
             <label for="">Food</label>
-            <select name="name" id="food">
-                <option value=""> </option>
-                <option value="">Ice cream </option>
-                <option value="">Chips</option>
-                <option value="">Cool drink</option>
-                <option value="">Rice</option>
-                <option value="">Dall</option>
-            </select><br><br>
+            <select name="name" class="food" onchange="changeresult()">
+                <option value="1"> </option>
+                <option value="Ice cream">Ice cream </option>
+                <option value="Chips">Chips</option>
+                <option value="Cool drink">Cool drink</option>
+                <option value="Rice">Rice</option>
+                <option value="Dall">Dall</option>
+            </select>
             <button class="btn btn-primary" id="btn" onclick="add()">submit</button>
         </div>
-       </div>
-    </section>
-<table class="table table-dark table border">
+        
+      
+    
+<table class="table table border tab">
     <thead>
         <th>Fname</th>
         <th>Lname</th>
         <th>Address</th>
         <th>Gender</th>
-        <th>Food</th>
+        <th >Food</th>
     </thead>
     <tbody class="output">
 
     </tbody>
 </table>
+</div>
 
     <script src="script.js"></script>
 </body>
